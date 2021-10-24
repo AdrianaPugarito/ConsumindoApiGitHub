@@ -15,12 +15,19 @@ input, button {
 
 h1{
     color: #FFD53D;
+    font-size: 80px;
     text-align: center;
     text-shadow: 7px 4px 5px #BFD7ED;
     margin-top: 50px;
 }
 
 h2{
+    color: #41729F;
+    font-size: 50px;
+    text-align: center;
+}
+
+h3{
     color: #41729F;
     text-align: center;
 }
@@ -53,9 +60,10 @@ form input:focus{ /*quando façam click troque de cor*/
     display: flex;
     width: 250px;
     box-shadow: 5px 5px 5px 5px #BFD7ED;
-    margin: 10px 100px 20px 870px;
+    margin: 40px 100px 20px 880px;
     border-radius: 50%;
     position: absolute;
+    
 }
 
 .btn-app{
@@ -176,7 +184,11 @@ footer{
     display: grid;
     align-items: center;
     justify-items: center;
-    background:  linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background: linear-gradient(
+            225deg,
+            rgba(102, 16, 242, 0.3) 0%,
+            rgba(102, 16, 242, 0) 100%
+          );
   }
   
   .copy {
@@ -187,18 +199,18 @@ footer{
     text-align: center;
   }
 
-
 /*Media Query*/
 
 @media (max-width: 600px){
   
-  .img-github{
-    width: 85px;
-    margin: 160px 10px 0px 0px;
-}
+    .img-github{
+        width: 85px;
+        margin: 80px 100px 20px 270px;
+    }
+
 
 .app .content-form{
-    width: 110%;
+  width: 110%;
     margin-left: -22px;
 }
 
@@ -208,9 +220,14 @@ footer{
     margin-right: 25px;
 }
 
-.apiRepo .titulo {
-  padding-top: 8px;
+h1{
   font-size: 25px;
+  text-transform: uppercase;
+  padding-top: 8px;
+}
+
+h2{
+    font-size: 25px;
 }
 
 .app .content-list ul{
@@ -233,5 +250,9 @@ footer{
 .app .content-list ul li a{
     font-size: 10px;
 }
+
+.copy{
+    font-size: 1rem;
+  }
 
 }
